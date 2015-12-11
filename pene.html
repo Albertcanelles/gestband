@@ -1,0 +1,79 @@
+<style type="text/css">
+  
+  .navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: #B6B6B6;
+  margin: auto;
+}
+.navbar {
+  background-color: #388E3C;
+  color: #FFFFFF;
+}
+a {
+  color: #FFFFFF !important;
+}
+a:hover {
+  color: #727272 !important;
+}
+.custom-navbar .hamburger-on-left {
+  float: left;
+}
+.navbar-left li {
+  text-align: left;
+}
+.navbar-right li {
+  text-align: right;
+}
+</style>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+
+<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <div class="container-fluid">
+    <!-- expanded behavior -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GestBand</a>
+      <!-- expanded left navbar-->
+      <div class="navbar-left">
+        <button type="button" class="navbar-toggle hamburger-on-left" data-toggle="collapse" data-target="#left-navbar-menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="false"></span>
+        </button>
+      </div>
+
+      <!-- expanded right navbar -->
+      <div class="navbar-right">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#right-navbar-menu">
+          <span class="glyphicon glyphicon-option-vertical" aria-hidden="false"></span>
+        </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
+          <span class="glyphicon glyphicon-search" aria-hidden="false"></span>
+        </button>
+      </div>
+    </div>
+
+
+
+    <!-- collapsed behavior -->
+    <ul id="left-navbar-menu" class="nav navbar-nav navbar-left navbar-collapse collapse">
+      <li><a href="#">Left</a>
+      </li>
+      <li><a href="#about">Left</a>
+      </li>
+    </ul>
+
+    <ul id="right-navbar-menu" class="nav navbar-nav navbar-right navbar-collapse collapse">
+      <li><a href="#about">Right</a>
+      </li>
+      <li><a href="#contact">Right</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

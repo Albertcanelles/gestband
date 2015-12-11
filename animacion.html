@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position :relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s infinite;
+}
+
+
+@-webkit-keyframes mymove {
+   from,20% 	{ -webkit-transform: rotateY(0deg);   }
+   30%,40%  	{ -webkit-transform: rotateY(90deg);  }
+   50%,60%  	{ -webkit-transform: rotateY(180deg); }
+   70%,80% 	{ -webkit-transform: rotateY(270deg); }
+   90%,to	{ -webkit-transform: rotateY(360deg); }
+}
+
+
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>
